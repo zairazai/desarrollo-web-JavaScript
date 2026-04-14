@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavScript Bigint</h1>
+<p>BigInt supports bitwise operations, but only with other BigInts (not Numbers).</p>
+
+<p id="demo"></p>
+
+<script>
+let a = 5n;   // 0101
+let b = 3n;   // 0011
+
+let x = (a & b); // 1n   (0001)
+let y = (a | b); // 7n   (0111)
+let z = (a ^ b); // 6n   (0110)
+let n = (~a);    // -6n  (bitwise NOT)
+
+document.getElementById("demo").innerHTML = x + "," + y + "," + z + "," + n; 
+</script>
+
+</body>
+</html>

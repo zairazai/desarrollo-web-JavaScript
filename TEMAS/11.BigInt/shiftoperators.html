@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavScript Bigint</h1>
+<h2>BigInt Shift</h2>
+<p>BigInt supports two shift operators: << and >></p>
+
+<p id="demo"></p>
+
+<script>
+let big = 10n; // (1010n)
+
+let x = (big << 2n); // 40n (101000)
+let y = (big >> 1n); // 5n  (0101)
+
+document.getElementById("demo").innerHTML = x + "<br>" + y; 
+</script>
+
+</body>
+</html>

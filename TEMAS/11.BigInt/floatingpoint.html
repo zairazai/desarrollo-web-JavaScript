@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Numbers</h1>
+<h2>Integer Precision</h2>
+
+<p>JavaScript can only safely represent integers up to Number.MAX_SAFE_INTEGER and down to Number.MIN_SAFE_INTEGER:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = Number.MAX_SAFE_INTEGER;
+let y = Number.MIN_SAFE_INTEGER;
+
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+</body>
+</html>

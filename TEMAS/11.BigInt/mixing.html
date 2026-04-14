@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavScript Bigint</h1>
+<p>You cannot mix BigInt and Number directly.</p>
+<p>To fix that, explicitly convert one:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 10n;
+let y = 5;
+
+let z = Number(x) + y;
+
+document.getElementById("demo").innerHTML = "Sum of x and y is " + z; 
+</script>
+
+</body>
+</html>

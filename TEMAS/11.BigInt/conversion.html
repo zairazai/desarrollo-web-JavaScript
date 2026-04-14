@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript BigInt</h1>
+<h2>BigInt Conversions</h2>
+<p>A large BigInt will lose precision when converted to a Number:</p>
+
+<p id="demo"></p>
+
+<script>
+// Creating BigInt
+let largeNumber = BigInt("12345678901234567890");
+
+// Conversion
+let num = Number(largeNumber);
+
+document.getElementById("demo").innerHTML = num; 
+</script>
+
+</body>
+</html>

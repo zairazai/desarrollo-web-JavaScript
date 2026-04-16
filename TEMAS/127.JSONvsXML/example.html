@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON vs XML</h2>
+
+<h3>JSON</h3>
+<pre id="json"></pre>
+
+<h3>XML</h3>
+<pre id="xml"></pre>
+
+<script>
+const jsonData = {
+  "employees": [
+    { "firstName": "John", "lastName": "Doe" },
+    { "firstName": "Anna", "lastName": "Smith" },
+    { "firstName": "Peter", "lastName": "Jones" }
+  ]
+};
+
+const xmlData = `
+<employees>
+  <employee>
+    <firstName>John</firstName>
+    <lastName>Doe</lastName>
+  </employee>
+  <employee>
+    <firstName>Anna</firstName>
+    <lastName>Smith</lastName>
+  </employee>
+  <employee>
+    <firstName>Peter</firstName>
+    <lastName>Jones</lastName>
+  </employee>
+</employees>
+`;
+
+document.getElementById("json").textContent = JSON.stringify(jsonData, null, 2);
+document.getElementById("xml").textContent = xmlData;
+</script>
+
+</body>
+</html>

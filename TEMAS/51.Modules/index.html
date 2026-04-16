@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>JavaScript Modules</h1>
+  <h3>Import add from math.js</h3>
+
+  <p id="demo"></p>
+
+  <script type="module">
+    import { add } from './math.js';
+
+    let result = add(2, 3);
+
+    document.getElementById("demo").innerHTML = "The result is " + result;
+  </script>
+</body>
+</html>

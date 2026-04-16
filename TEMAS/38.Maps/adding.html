@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The set() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create new Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+fruits.set("mangos", 100);
+
+let numb = fruits.get("mangos");
+
+document.getElementById("demo").innerHTML = "There are " + numb + " mangos.";
+</script>
+
+</body>
+</html>
